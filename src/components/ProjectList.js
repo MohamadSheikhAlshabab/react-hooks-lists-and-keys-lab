@@ -4,7 +4,12 @@ import ProjectItem from "./ProjectItem";
 function ProjectList({ projects }) {
   const project = projects.map(el => {
     return (
-      <ProjectItem key={el.id} name={el.name} about={el.about} technologies={el.technologies} />
+      <ProjectItem 
+        key={el.id} 
+        name={el.name} 
+        about={el.about} 
+        technologies={el.technologies} 
+      />
     )
   });
   return (
